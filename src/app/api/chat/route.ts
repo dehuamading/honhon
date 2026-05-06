@@ -351,6 +351,7 @@ export async function POST(request: NextRequest) {
     // 构建用户输入
     let inputText = userInput;
     const isFirstTurn = messages.length === 0 && step === 1;
+    const callYou = gender === 'female' ? '丫头' : '小子';
 
     if (!inputText && messages.length > 0) {
       // 找最后一条用户消息

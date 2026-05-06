@@ -6,24 +6,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "@radix-ui/react-progress": "^1.1.0",
+    "@radix-ui/react-select": "^2.1.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "drizzle-orm": "^0.45.2",
+    "lucide-react": "^0.400.0",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
-    "lucide-react": "^0.400.0",
-    "clsx": "^2.1.0",
     "tailwind-merge": "^2.3.0",
-    "class-variance-authority": "^0.7.0",
-    "@radix-ui/react-progress": "^1.1.0",
-    "@radix-ui/react-select": "^2.1.0"
+    "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
-    "@types/node": "^24.0.0"
+    "dotenv": "^17.4.2",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "^5.0.0"
   }
 }
